@@ -1,0 +1,162 @@
+.counter-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 16px;
+}
+
+.counter-card {
+    width: 100%;
+    max-width: 460px;
+    padding: 35px;
+    background: #ffffff;
+    border: 1px solid #e8eaf2;
+    border-radius: 22px;
+    box-shadow: 0 15px 45px rgba(35, 42, 80, 0.1);
+    text-align: center;
+}
+
+.counter-icon {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #e9edff;
+    color: #5267dc;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.counter-card h1 {
+    margin-bottom: 10px;
+    color: #20243a;
+    font-size: 30px;
+}
+
+.subtitle {
+    margin-bottom: 28px;
+    color: #7c8195;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.counter-display {
+    padding: 25px 15px;
+    margin-bottom: 25px;
+    background: #f6f7ff;
+    border: 1px solid #e8eaff;
+    border-radius: 16px;
+}
+
+.counter-label {
+    color: #777e9b;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.counter-display h2 {
+    margin: 15px 0 10px;
+    color: #5367dc;
+    font-size: 64px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.counter-display h2.negative {
+    color: #e05260;
+}
+
+.counter-display p {
+    color: #7c8195;
+    font-size: 13px;
+}
+
+.counter-buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.counter-buttons button {
+    flex: 1;
+    min-width: 0;
+    min-height: 50px;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.counter-buttons button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.counter-buttons button:active {
+    transform: scale(0.97);
+}
+
+.decrement-btn {
+    background: #e05260;
+}
+
+.increment-btn {
+    background: #5367dc;
+}
+
+.reset-btn {
+    width: 100%;
+    min-height: 46px;
+    border: 1px solid #dfe2ed;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #555b70;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.reset-btn:hover {
+    background: #f1f2f8;
+}
+
+.counter-footer {
+    padding-top: 22px;
+    margin-top: 22px;
+    border-top: 1px solid #eceef5;
+    color: #9297a8;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    .counter-card {
+        padding: 25px 18px;
+        border-radius: 17px;
+    }
+
+    .counter-card h1 {
+        font-size: 26px;
+    }
+
+    .counter-display h2 {
+        font-size: 54px;
+    }
+
+    .counter-buttons {
+        gap: 8px;
+    }
+
+    .counter-buttons button {
+        font-size: 13px;
+    }
+}
